@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="comment.js"></script>
+    <meta charset="UTF-8">
+    
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="file.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap" rel="stylesheet"> -->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS only -->
+    <div class="bg-scroll ..." style="background-image: url(...)"></div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .scrol {
+        height: 100px; 
+        position: relative;
+        overflow-y: scroll;
+        margin-bottom: 20px;
+
+      }
+
+      ::-webkit-scrollbar {
+  
+        width: 7px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: rgb(0, 64, 255);
+        box-shadow: 0 0 1px rgba(0 149 255);
+      }
+
+      /* @font-face {
+   font-family: myFirstFont;
+  src: url(https://www.fontspace.com/mike-samiya-font-f93269); 
+} */
+
+
+        
+      
+      
+
+    </style>
+  
+    <title>FILMDECK</title>
+</head>
+<body style="background: rgba(0, 0, 0, 0.942);">
+  <!-- <div class="bg-scroll  hover:bg-fixed" style="background-image: url(/bg/dark\ black\ wallpaper.jpg); background-attachment: fixed; "> -->
+
+ 
+
+  <!-- Nav Bar -->
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" bis_skin_checked="1">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <a href="index.html"><img src="/bg/logo.png" style="    border-radius: 60%; object-fit: cover; height: 100px; width: 105px; border: solid rgb(0, 0, 0);"  viewBox="0 0 24 24">
+          
+      </img></a>
+        <span class="ml-1 text-2xl " style="color: rgb(0, 255, 251); font-family: 'Audiowide', cursive; letter-spacing: 6px; font-weight:bold; padding-left: 10px;">FILMDECK</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a href="index.html" class="mr-5  btn" type="button" style="border-radius: 25% 5%; background-color: rgb(0, 191, 255); color: rgb(0, 0, 0);"> Home </a>
+        <a href="contact.html" class="mr-5  btn " type="button" style="border-radius: 25% 5%; background-color: rgb(0, 191, 255); color: rgb(0, 0, 0);"> Contact Us </a>
+        <a href="about.html" class="mr-5  btn" type="button" style="border-radius: 25% 5%; background-color: rgb(0, 191, 255); color: rgb(0, 0, 0);"> About Us</a>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 25% 5%; background-color: rgb(0, 191, 255); color: rgb(0, 0, 0);">
+            Types
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="anime.html"> Anime </a></li>
+            <li><a class="dropdown-item" href="bollywood.html"> Bollywood </a></li>
+            <li><a class="dropdown-item" href="hollywood.html"> Hollywood </a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="navbar">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Welcome Content -->
+      <section class="text-gray-600 body-font" >
+       <div class="container px-5 py-24 mx-auto" bis_skin_checked="1">
+        <div class="flex flex-wrap w-full mb-2" bis_skin_checked="1">
+         <div class="lg:w-1/2 w-full mb-2 lg:mb-0" bis_skin_checked="1">
+           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2" style="color: rgb(255, 255, 255);"> Welcome to our Website...</h1>
+           <div class="h-1 w-20 bg-indigo-500 rounded" bis_skin_checked="1"></div>
+        </div>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500" style="font-family: 'Dancing Script', cursive; list-style: bengali; text-align: center; color: rgb(255, 255, 255); font-size: large;">Welcome to our movie rating website, where you can indulge in your love for cinema and connect with like-minded enthusiasts. From blockbusters to indie gems, we've got it all covered. Whether you're looking for the latest releases or seeking hidden cinematic treasures, our community is dedicated to sharing our thoughts, opinions, and recommendations. So sit back, grab some popcorn, and join us on this cinematic journey. Together, let's celebrate the magic of movies and discover new favorites along the way.</p>
+        </div></div></section>
+
+    <!-- Slide content Corousel-->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" style=" width: 70%; margin-left: 15%; margin-top: 0; margin-bottom: 0;" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="active" aria-current="true" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner" style="height: 60%; width: 100%; ">
+          
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="/bg/onepieceposter.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/bg/malangposter.jpg" class="d-block w-100" alt="..." >
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/bg/missionposter.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/bg/demonslayer.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000" >
+            <img src="/bg/fastposter.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+
+   <!-- Cards Content (Main Kaam ka samaan)-->
+      <section class="text-gray-600 body-font" >
+        <div class="container px-5 py-24 mx-auto" bis_skin_checked="1">
+          <div class="flex flex-wrap -m-4" bis_skin_checked="1">
+
+            <div class="xl:w-1/4 md:w-1/2 p-4" bis_skin_checked="1">
+              <div class=" p-6 rounded-lg" style="background-color: rgb(232, 255, 254); " bis_skin_checked="1">
+                <!-- Image -->
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/bg/Demon Slayer Kimetsu no Yaiba.jpg" alt="content">
+                <!-- image -->
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> You can also Rate the movies...</h3>
+                <div class="movie-rating">
+                  <div class="rating-display"></div>
+                  <div class="rating-stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span> 
+                  </div>
+                </div>
+                
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Demon Slayer</h2>
+                  <div class="scrol">
+                  <p class="leading-relaxed text-base bg-white" style="padding: 10px;">It is a Japanese manga series written and illustrated by Koyoharu Gotōge, and it is about Tanjiro Kamado, a young boy who becomes a demon slayer after his family is slaughtered and his younger sister Nezuko is turned into a demon.</p>
+                  </div>
+                  <div>
+                    <a href="Comment.html" type="button" class="button"><button> Let's Talk :) </button></a>
+                    
+                  </div>
+                </div>
+            </div>
+
+
+            
+    
+    
+            <div class="xl:w-1/4 md:w-1/2 p-4" bis_skin_checked="1">
+              <div class=" p-6 rounded-lg" style="background-color: rgb(232, 255, 254); " bis_skin_checked="1">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/bg/Master.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> You can also Rate the movies...</h3>
+                <div class="movie-rating">
+                  <div class="rating-display"></div>
+                  <div class="rating-stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>
+                </div>
+                
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">MASTER</h2>
+                  <div class="scrol">
+                  <p class="leading-relaxed text-base bg-white" style="padding: 10px;">Master is an action film from India about a professor, JD, who is sent to teach at a juvenile reform school for three months. He clashes with an unscrupulous man, Bhavani, who controls the school's young inmates to cover up his own criminal activities.</p>
+                  </div>
+                  <div>
+                    <a href="Comment.html" type="button" class="button"><button> Let's Talk :) </button></a>
+                    
+                  </div>
+              </div>
+
+            </div>
+
+            
+    
+    
+            <div class="xl:w-1/4 md:w-1/2 p-4" bis_skin_checked="1">
+              <div class=" p-6 rounded-lg" style="background-color: rgb(232, 255, 254); " bis_skin_checked="1">
+                <!-- Image -->
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/bg/Cowboy Bebop.jpg" alt="content">
+                <!-- image -->
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> You can also Rate the movies...</h3>
+                <div class="movie-rating">
+                  <div class="rating-display"></div>
+                  <div class="rating-stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span> 
+                  </div>
+                </div>
+                
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Cowboy Bebop</h2>
+                  <div class="scrol">
+                  <p class="leading-relaxed text-base bg-white" style="padding: 10px;">Set in 2071, in a post-apocalyptic world where Earth has become largely uninhabitable, the story follows a ragtag group of bounty hunters, known as cowboys, aboard the spaceship “Bebop.” As they traverse planets and moons in search of wanted fugitives, each cowboy contends with shadows from the past they can't outrun.</p>
+                  </div>
+                  <div>
+                    <a href="Comment.html" type="button" class="button"><button> Let's Talk :) </button></a>
+                    
+                  </div>
+                </div>
+            </div>
+    
+
+            <!-- 1 Card -->
+
+            <div class="xl:w-1/4 md:w-1/2 p-4" bis_skin_checked="1">
+              <div class=" p-6 rounded-lg" style="background-color: rgb(232, 255, 254); " bis_skin_checked="1">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/bg/malang.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> You can also Rate the movies...</h3>
+                <div class="movie-rating">
+                  <div class="rating-display"></div>
+                  <div class="rating-stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>
+                </div>
+                
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Malang (2020)</h2>
+                  <div class="scrol">
+                  <p class="leading-relaxed text-base bg-white" style="padding: 10px;">Advait (Aditya Roy Kapoor), a young introvert, visits Goa where he meets Sara (Disha Patani), a free-spirited girl from London who has come to India for the first time to live life unshackled, like a vagabond (Malang). Extreme opposites of each other, they both live it up together. All goes well until life turns upside down. Five years later, this incident circles back to SHO Agashe (Anil Kapoor), vigilante killer cop and Michael Rodrigues (Kunal Kemmu), a righteous cop. What is the connection between Advait, Sara, Agashe and Michael? Malang answers all these questions.</p>
+                  </div>
+                  <div>
+                    <a href="Comment.html" type="button" class="button"><button> Let's Talk :) </button></a>
+                    
+                  </div>
+              </div>
+
+            </div>
+
+            <!-- 1 Card  -->
+
+            <div class="xl:w-1/4 md:w-1/2 p-4" bis_skin_checked="1">
+              <div class=" p-6 rounded-lg" style="background-color: rgb(232, 255, 254); " bis_skin_checked="1">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/bg/hollywood/FALLOUT.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> You can also Rate the movies...</h3>
+                <div class="movie-rating">
+                  <div class="rating-display"></div>
+                  <div class="rating-stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span> 
+                  </div>
+                </div>
+                
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">MISSION: IMPOSSIBLE</h2>
+                  <div class="scrol">
+                  <p class="leading-relaxed text-base bg-white" style="padding: 10px;">Two years after Ethan Hunt had successfully captured Solomon Lane, the remnants of the Syndicate have reformed into another organization called the Apostles. Under the leadership of a mysterious fundamentalist known only as John Lark, the organization is planning on acquiring three plutonium cores. Ethan and his team are sent to Berlin to intercept them, but the mission fails when Ethan saves Luther and the Apostles escape with the plutonium. With CIA agent August Walker joining the team, Ethan and his allies must now find the plutonium cores before it's too late.</p>
+                  </div>
+                  <div>
+                    <a href="Comment.html" type="button" class="button"><button> Let's Talk :) </button></a>
+                    
+                   
+                    
+                  </div>
+              </div>
+
+            </div>
+
+            <div class="xl:w-1/4 md:w-1/2 p-4" bis_skin_checked="1">
+              <div class=" p-6 rounded-lg" style="background-color: rgb(232, 255, 254); " bis_skin_checked="1">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/bg/Major.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> You can also Rate the movies...</h3>
+                <div class="movie-rating">
+                  <div class="rating-display"></div>
+                  <div class="rating-stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>
+                </div>
+                
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Major</h2>
+                  <div class="scrol">
+                  <p class="leading-relaxed text-base bg-white" style="padding: 10px;">Based on the life of Major Sandeep Unnikrishnan, who was martyred in action during the November 2008 Mumbai attacks and was consequently awarded the Ashoka Chakra, India's highest peacetime gallantry award, on 26 January 2009</p>
+                  </div>
+                  <div>
+                    <a href="Comment.html" type="button" class="button"><button> Let's Talk :) </button></a>
+                    
+                  </div>
+              </div>
+            </div>
+
+            <div class="xl:w-1/4 md:w-1/2 p-4" bis_skin_checked="1">
+              <div class=" p-6 rounded-lg" style="background-color: rgb(232, 255, 254); " bis_skin_checked="1">
+                <!-- Image -->
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/bg/one piece.jpg" alt="content">
+                <!-- image -->
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> You can also Rate the movies...</h3>
+                <div class="movie-rating">
+                  <div class="rating-display"></div>
+                  <div class="rating-stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span> 
+                  </div>
+                </div>
+                
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">One Piece</h2>
+                  <div class="scrol">
+                  <p class="leading-relaxed text-base bg-white" style="padding: 10px;">The series focuses on Monkey D. Luffy, a young man made of rubber, who inspired by his childhood idol, the powerful pirate "Red-Haired Shanks", sets off on a journey from the East Blue Sea to find the mythical treasure, the One Piece, and proclaim himself the King of the Pirates.</p>
+                  </div>
+                  <div>
+                    <a href="Comment.html" type="button" class="button"><button> Let's Talk :) </button></a>
+                    
+                  </div>
+                </div>
+            </div>
+
+            <div class="xl:w-1/4 md:w-1/2 p-4" bis_skin_checked="1">
+              <div class=" p-6 rounded-lg" style="background-color: rgb(232, 255, 254); " bis_skin_checked="1">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/bg/hollywood/FURIOUS 7.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> You can also Rate the movies...</h3>
+                <div class="movie-rating">
+                  <div class="rating-display"></div>
+                  <div class="rating-stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span> 
+                  </div>
+                </div>
+                
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">FURIOUS 7</h2>
+                  <div class="scrol">
+                  <p class="leading-relaxed text-base bg-white" style="padding: 10px;">Dominic and his crew thought they'd left the criminal mercenary life behind. They'd defeated international terrorist Owen Shaw and went their separate ways. But now, Shaw's brother, Deckard Shaw, is out killing the crew one by one for revenge. Worse, a Somalian terrorist called Jakarde and a shady government official called "Mr. Nobody" are both competing to steal a computer terrorism program called "God's Eye," that can turn any technological device into a weapon. Torretto must reconvene with his team to stop Shaw and retrieve the God's Eye program while caught in a power struggle between the terrorist and the United States government.</p>
+                  </div>
+                  <div>
+                    <a href="Comment.html" type="button" class="button"><button> Let's Talk :) </button></a>
+                    
+                   
+                    
+                  </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <footer>
+    <div class="footer">
+      <div class="main"></div>
+        <div class="bubbles">
+          
+          <div class="bubble" style="--size:2.032353875662886rem; --distance:8.879700514650917rem; --position:68.30360260132217%; --time:3.2658530928402936s; --delay:-3.11167419592991s;"></div>
+        
+          <div class="bubble" style="--size:5.950275809718101rem; --distance:8.53029385845305rem; --position:36.37764530112081%; --time:3.17124779926706s; --delay:-3.807130592842583s;"></div>
+
+    <div class="bubble" style="--size:4.427185017482606rem; --distance:6.091405141861149rem; --position:77.36057093617428%; --time:3.2370303013672967s; --delay:-3.033341323722135s;"></div>
+
+    <div class="bubble" style="--size:2.9577055710289066rem; --distance:9.666315711417983rem; --position:88.448429854683%; --time:3.8685617120466538s; --delay:-2.9472513938397378s;"></div>
+
+    <div class="bubble" style="--size:3.9516205395747726rem; --distance:8.720962367929499rem; --position:24.65270700545642%; --time:3.8409659867248815s; --delay:-3.117357285356917s;"></div>
+
+    <div class="bubble" style="--size:4.527135739320889rem; --distance:7.565526147434984rem; --position:73.89227259452187%; --time:3.897160561279659s; --delay:-2.352436162823308s;"></div>
+
+    <div class="bubble" style="--size:3.792363013118692rem; --distance:7.399537098074469rem; --position:41.24151442193205%; --time:2.7262831767770774s; --delay:-2.097716625703065s;"></div>
+
+    <div class="bubble" style="--size:4.189113073846987rem; --distance:9.600690556532793rem; --position:18.029828218041235%; --time:3.4047063292399184s; --delay:-2.7902681561623797s;"></div>
+
+    <div class="bubble" style="--size:3.265928044787625rem; --distance:7.3486248895983985rem; --position:-4.851389760881033%; --time:2.017427046013657s; --delay:-2.8378621128962216s;"></div>
+
+    <div class="bubble" style="--size:3.0663658030934675rem; --distance:6.0879870255140895rem; --position:75.62239855871589%; --time:3.077396921728747s; --delay:-2.9717722667062105s;"></div>
+
+    <div class="bubble" style="--size:2.978906533078365rem; --distance:6.860200147674122rem; --position:72.11719277809145%; --time:2.3161136321820495s; --delay:-3.7132201793353534s;"></div>
+
+    <div class="bubble" style="--size:5.960547950622709rem; --distance:9.554196248330816rem; --position:2.175638961148236%; --time:3.9682097842883084s; --delay:-3.6138201111918553s;"></div>
+
+    <div class="bubble" style="--size:2.344008511832806rem; --distance:7.705482821353859rem; --position:15.897794060904577%; --time:2.8161442782271044s; --delay:-3.1217817880798737s;"></div>
+
+    <div class="bubble" style="--size:4.533717762285863rem; --distance:8.734771018328013rem; --position:10.66662761825449%; --time:3.0075729000817963s; --delay:-2.927981334060057s;"></div>
+
+    <div class="bubble" style="--size:4.718145541427077rem; --distance:6.650504564166091rem; --position:9.373217935584563%; --time:3.584937514787033s; --delay:-2.2780928092125907s;"></div>
+
+    <div class="bubble" style="--size:2.3949808776422215rem; --distance:8.519758037498722rem; --position:68.65926722757061%; --time:2.659268467037699s; --delay:-3.7167585237801184s;"></div>
+
+    <div class="bubble" style="--size:4.859084712626536rem; --distance:7.345832935356803rem; --position:63.89946552699716%; --time:3.234519340563298s; --delay:-3.60392473923569s;"></div>
+
+    <div class="bubble" style="--size:4.335621726140038rem; --distance:6.40624964569289rem; --position:34.34876709223187%; --time:3.0441505385465675s; --delay:-2.462373470053035s;"></div>
+
+    <div class="bubble" style="--size:4.9895601307298145rem; --distance:8.867038821846442rem; --position:92.89858119548632%; --time:2.2866746039155035s; --delay:-2.89049761612935s;"></div>
+
+    <div class="bubble" style="--size:2.4072886991433977rem; --distance:6.127731032250175rem; --position:32.46183510777354%; --time:2.589581747033434s; --delay:-2.8330367719482075s;"></div>
+
+    <div class="bubble" style="--size:3.4359109293618175rem; --distance:9.692166740143223rem; --position:38.855253471944806%; --time:2.6303424490146s; --delay:-2.090817985244273s;"></div>
+
+    <div class="bubble" style="--size:5.2009203879510855rem; --distance:6.1869424818047305rem; --position:77.67676390672298%; --time:3.5613064880273617s; --delay:-3.8957090276203425s;"></div>
+
+    <div class="bubble" style="--size:5.596606171345309rem; --distance:9.793732118362414rem; --position:47.23585927840181%; --time:2.5789908778450457s; --delay:-3.8428604234348316s;"></div>
+
+    <div class="bubble" style="--size:4.821667711082308rem; --distance:7.046056325593446rem; --position:5.455076974208309%; --time:2.4475179649236685s; --delay:-3.205930407418363s;"></div>
+
+    <div class="bubble" style="--size:5.753007089971923rem; --distance:6.600679065623131rem; --position:1.2170160082732213%; --time:3.388403558817508s; --delay:-3.6269644345185275s;"></div>
+
+    <div class="bubble" style="--size:4.53497589340488rem; --distance:7.704438744876212rem; --position:3.2805961030830737%; --time:2.7018735776879748s; --delay:-2.5068490602565237s;"></div>
+    
+    <div class="bubble" style="--size:4.735662322750037rem; --distance:7.776646908849999rem; --position:62.210692012326774%; --time:3.9536614639787238s; --delay:-3.4289872204617784s;"></div>
+
+    <div class="bubble" style="--size:2.9029972352003366rem; --distance:8.700413770860296rem; --position:25.847673486309915%; --time:2.246671904385658s; --delay:-3.072368101318684s;"></div>
+
+    <div class="bubble" style="--size:4.839041775814543rem; --distance:7.174998983294908rem; --position:53.51951491841616%; --time:3.7304160878914785s; --delay:-2.7529426116338436s;"></div>
+
+    <div class="bubble" style="--size:5.765243675382986rem; --distance:9.165181327696251rem; --position:80.06227133677761%; --time:3.516373825711857s; --delay:-3.540349664880212s;"></div>
+
+    <div class="bubble" style="--size:3.303692497990286rem; --distance:7.206183365486585rem; --position:58.832033830467275%; --time:3.972578799129992s; --delay:-2.4905694334095143s;"></div>
+
+    <div class="bubble" style="--size:2.3216799909826618rem; --distance:9.914202602338364rem; --position:14.032276096265967%; --time:3.7596216722831333s; --delay:-2.6522134822280394s;"></div>
+
+    <div class="bubble" style="--size:3.5626205620452476rem; --distance:7.729795623211473rem; --position:28.900823516110485%; --time:2.8270076006118154s; --delay:-2.4612133765732214s;"></div>
+
+    <div class="bubble" style="--size:2.481011055603725rem; --distance:8.816486629662318rem; --position:58.344395741523336%; --time:3.147853066937096s; --delay:-2.199422858659457s;"></div>
+
+    <div class="bubble" style="--size:5.027722020954527rem; --distance:9.3966374418409rem; --position:25.54538620955193%; --time:3.6645036446674766s; --delay:-3.8327122857374416s;"></div>
+
+    <div class="bubble" style="--size:4.5437472412957804rem; --distance:9.28647880639707rem; --position:-4.484088559137676%; --time:3.3877407040267915s; --delay:-2.428387766962534s;"></div>
+
+    <div class="bubble" style="--size:2.1934106556328006rem; --distance:8.319182244775906rem; --position:69.17614491396108%; --time:2.874163708799469s; --delay:-3.504605058416295s;"></div>
+
+    <div class="bubble" style="--size:3.5283129388019843rem; --distance:9.218614311711686rem; --position:31.02316259847622%; --time:3.410572806976664s; --delay:-3.685860202248936s;"></div>
+
+    <div class="bubble" style="--size:4.912219452017725rem; --distance:6.159130766089614rem; --position:88.1738215620276%; --time:3.0213561805570057s; --delay:-3.908697767403513s;"></div>
+
+    <div class="bubble" style="--size:2.4927165087094743rem; --distance:9.99242357230981rem; --position:45.44350793464723%; --time:3.6815293709317247s; --delay:-3.641920671285965s;"></div>
+
+    <div class="bubble" style="--size:5.985040176869264rem; --distance:7.876270452895115rem; --position:-1.9879847707007348%; --time:2.036402579159483s; --delay:-3.1996625905334932s;"></div>
+
+    <div class="bubble" style="--size:4.984160013223379rem; --distance:7.070533938598661rem; --position:48.448801949725954%; --time:2.037782009888898s; --delay:-2.0438994142882025s;"></div>
+
+    <div class="bubble" style="--size:2.331957855194333rem; --distance:8.153038310671823rem; --position:65.80735733077908%; --time:2.0289385753805176s; --delay:-2.8464536174623447s;"></div>
+
+    <div class="bubble" style="--size:2.32583879532765rem; --distance:8.739405557166108rem; --position:77.18989039266702%; --time:2.523554164067024s; --delay:-3.8951876301473547s;"></div>
+
+    <div class="bubble" style="--size:5.522351415771394rem; --distance:9.646563519919837rem; --position:5.0372330499212445%; --time:2.779420761366906s; --delay:-2.5490913864362765s;"></div>
+
+    <div class="bubble" style="--size:4.929101286418492rem; --distance:8.510696585420968rem; --position:56.511947395932616%; --time:3.185262613225106s; --delay:-2.7353621187550163s;"></div>
+
+    <div class="bubble" style="--size:2.8135271026276554rem; --distance:6.798016714179846rem; --position:75.94789987977425%; --time:3.814830876180545s; --delay:-3.2546574964348802s;"></div>
+    
+    <div class="bubble" style="--size:5.99320016664791rem; --distance:6.218881758003067rem; --position:103.95977081861574%; --time:3.7149353400639185s; --delay:-2.410101907711284s;"></div>
+
+    <div class="bubble" style="--size:3.5306442045502022rem; --distance:9.566623065239028rem; --position:62.21689237478196%; --time:2.5801442139163697s; --delay:-2.9863983769267577s;"></div>
+
+    <div class="bubble" style="--size:4.037271839354283rem; --distance:9.363238891818252rem; --position:31.299860536474988%; --time:2.4984349576169023s; --delay:-2.9173686491346893s;"></div>
+
+    <div class="bubble" style="--size:2.3382843449747988rem; --distance:8.829016606822202rem; --position:60.93903003511416%; --time:2.1266747082597095s; --delay:-3.4990082295712845s;"></div>
+
+    <div class="bubble" style="--size:2.686873682050951rem; --distance:8.55683670851616rem; --position:9.598853935203667%; --time:3.0025568027377303s; --delay:-3.348922980031172s;"></div>
+
+    <div class="bubble" style="--size:5.905707279316854rem; --distance:7.835097849693209rem; --position:25.175499572526505%; --time:3.109110056187846s; --delay:-2.8178104491788134s;"></div>
+
+    <div class="bubble" style="--size:4.1981513089822995rem; --distance:9.11812407441664rem; --position:22.462764999837525%; --time:3.8169839540063704s; --delay:-3.7157495141981842s;"></div>
+
+    <div class="bubble" style="--size:5.141078937858494rem; --distance:7.718997233771131rem; --position:83.84276097327904%; --time:3.3523609767310116s; --delay:-3.4305722310819053s;"></div>
+
+    <div class="bubble" style="--size:3.9693572000771926rem; --distance:9.796463124309739rem; --position:49.018738707880516%; --time:2.8412627921210554s; --delay:-3.3707076845832415s;"></div>
+
+    <div class="bubble" style="--size:2.8142561628592686rem; --distance:9.228870074804021rem; --position:96.74797649932276%; --time:3.6010179356685557s; --delay:-3.211877997249738s;"></div>
+
+    <div class="bubble" style="--size:2.899506774507974rem; --distance:7.797907742904023rem; --position:93.95637920505622%; --time:3.008280057764214s; --delay:-3.477238620009974s;"></div>
+
+    <div class="bubble" style="--size:5.622586659629577rem; --distance:8.834676712090427rem; --position:39.15133744928751%; --time:2.8330938155177s; --delay:-3.1461473990591746s;"></div>
+
+    <div class="bubble" style="--size:2.476841879214011rem; --distance:9.760677569769998rem; --position:59.28207196557423%; --time:2.054066751033992s; --delay:-3.2999456423182476s;"></div>
+
+    <div class="bubble" style="--size:4.41516505575756rem; --distance:9.246146655105282rem; --position:62.42740472407125%; --time:3.980283661123829s; --delay:-3.533892309072363s;"></div>
+    
+    <div class="bubble" style="--size:5.759066003810833rem; --distance:7.944646493932398rem; --position:45.32861677601037%; --time:3.8904788425969645s; --delay:-3.5150571514051996s;"></div>
+
+    <div class="bubble" style="--size:4.686920456361134rem; --distance:6.818169292580539rem; --position:89.89022243068455%; --time:2.6314219651493342s; --delay:-3.2864111559043017s;"></div>
+
+    <div class="bubble" style="--size:4.430180758144146rem; --distance:7.732821140028111rem; --position:1.6207250872384105%; --time:3.721098599732825s; --delay:-3.2929118781839826s;"></div>
+
+    <div class="bubble" style="--size:4.7575587207192225rem; --distance:6.58549174757575rem; --position:88.09505026027612%; --time:2.1799523633388835s; --delay:-2.459713210786467s;"></div>
+
+    <div class="bubble" style="--size:5.319174754797165rem; --distance:9.902757211559543rem; --position:12.297151391823562%; --time:2.610931306804642s; --delay:-2.392138798029957s;"></div>
+
+    <div class="bubble" style="--size:5.764681124971119rem; --distance:8.060258986619214rem; --position:23.030306281006084%; --time:3.9045243721036496s; --delay:-2.248245877426059s;"></div>
+
+    <div class="bubble" style="--size:2.912501734506195rem; --distance:8.595690972631676rem; --position:4.130263207575824%; --time:2.932315055710774s; --delay:-3.243637320840382s;"></div>
+
+    <div class="bubble" style="--size:5.126427234023542rem; --distance:9.23487167095968rem; --position:29.124597446303383%; --time:3.4173260229009075s; --delay:-2.4731110991514575s;"></div>
+    
+    <div class="bubble" style="--size:5.586635791573933rem; --distance:6.562543863469161rem; --position:37.350479369854185%; --time:3.706518557737622s; --delay:-3.06466321707615s;"></div>
+
+    <div class="bubble" style="--size:5.22601824322866rem; --distance:9.92802035311965rem; --position:17.561727842757215%; --time:2.68289294144824s; --delay:-2.5863440417659334s;"></div>
+
+    <div class="bubble" style="--size:2.070313500039033rem; --distance:9.34236078409812rem; --position:68.60168009782554%; --time:2.1167718026041533s; --delay:-2.464483885838688s;"></div>
+
+    <div class="bubble" style="--size:2.514032403732222rem; --distance:7.583981273332999rem; --position:54.29398748531602%; --time:2.4960197991324646s; --delay:-3.0989091938045163s;"></div>
+
+    <div class="bubble" style="--size:5.372631736201322rem; --distance:6.793887335334997rem; --position:36.42939297648732%; --time:2.7354750749719945s; --delay:-2.009586154908623s;"></div>
+
+    <div class="bubble" style="--size:2.7522813961503854rem; --distance:9.94288339704024rem; --position:76.76805008369426%; --time:3.733973652012102s; --delay:-3.00821444644012s;"></div>
+
+    <div class="bubble" style="--size:3.436590207848117rem; --distance:9.250440617989815rem; --position:27.221632420937013%; --time:2.5404272814239643s; --delay:-2.555555649850673s;"></div>
+
+    <div class="bubble" style="--size:3.3393918714160593rem; --distance:6.777153080504013rem; --position:72.4188589386638%; --time:3.3662333893030523s; --delay:-3.832081303283038s;"></div>
+
+    <div class="bubble" style="--size:2.685053556625217rem; --distance:7.953966491592862rem; --position:89.08427360491385%; --time:3.240651899212137s; --delay:-2.392139783164079s;"></div>
+
+    <div class="bubble" style="--size:3.463153811812533rem; --distance:9.081142266548042rem; --position:84.23455089079071%; --time:2.694201546046772s; --delay:-2.123131417397482s;"></div>
+
+    <div class="bubble" style="--size:2.1019317239950714rem; --distance:7.971374257338193rem; --position:66.67321867394584%; --time:3.890476026674454s; --delay:-3.7333411079915115s;"></div>
+
+    <div class="bubble" style="--size:2.716089729114099rem; --distance:9.170839419392149rem; --position:67.91174933490366%; --time:2.9554550881006962s; --delay:-3.7044339271148106s;"></div>
+
+    <div class="bubble" style="--size:3.940341882934308rem; --distance:8.557742129474398rem; --position:-0.880323413519644%; --time:2.825893584241686s; --delay:-2.3445888275591744s;"></div>
+
+    <div class="bubble" style="--size:5.885144585827525rem; --distance:6.40034856858563rem; --position:10.417737212524518%; --time:3.820260720795041s; --delay:-3.5634396104195725s;"></div>
+
+    <div class="bubble" style="--size:5.3563260849231265rem; --distance:9.087022712927393rem; --position:53.064625716856284%; --time:2.2502642597267926s; --delay:-3.6801491828155486s;"></div>
+
+    <div class="bubble" style="--size:4.150430438394932rem; --distance:7.709957219197151rem; --position:37.1054872552488%; --time:3.039404043554557s; --delay:-2.702216324472221s;"></div>
+
+    <div class="bubble" style="--size:4.9977185189780124rem; --distance:7.212786040549811rem; --position:77.03030859778085%; --time:3.6503544154431053s; --delay:-3.433192456738051s;"></div>
+
+    <div class="bubble" style="--size:2.3676607381492856rem; --distance:9.472966430129356rem; --position:-3.5014990429203308%; --time:3.1957762876647773s; --delay:-3.8822296658740756s;"></div>
+
+    <div class="bubble" style="--size:4.156618542779407rem; --distance:8.622113639913778rem; --position:62.96802727359862%; --time:2.6595505304378952s; --delay:-2.975093534731114s;"></div>
+
+    <div class="bubble" style="--size:4.008757427659153rem; --distance:9.37591126294781rem; --position:50.60492220480502%; --time:3.36914156950166s; --delay:-3.5692462687929063s;"></div>
+
+    <div class="bubble" style="--size:5.663282181937028rem; --distance:7.938481507344392rem; --position:48.14903046953066%; --time:3.8792056955021685s; --delay:-2.034259691231178s;"></div>
+
+    <div class="bubble" style="--size:2.7011617872994744rem; --distance:8.892641338725976rem; --position:6.434234572795303%; --time:2.6949207739025676s; --delay:-3.3033742650720797s;"></div>
+
+    <div class="bubble" style="--size:4.880733621265379rem; --distance:6.613211739283211rem; --position:97.06156603918627%; --time:2.4277877774781307s; --delay:-3.516761803428359s;"></div>
+
+    <div class="bubble" style="--size:3.6292789515764152rem; --distance:6.299035417384724rem; --position:59.70346477501859%; --time:3.3830717101172385s; --delay:-3.8285381324267544s;"></div>
+
+    <div class="bubble" style="--size:3.425309181661711rem; --distance:7.2783374207052365rem; --position:29.594319921841695%; --time:2.304144419485418s; --delay:-3.1335649261746146s;"></div>
+
+    <div class="bubble" style="--size:5.827747469877774rem; --distance:7.678071049076652rem; --position:9.45643445685619%; --time:3.454083190176418s; --delay:-2.5855295223060577s;"></div>
+
+    <div class="bubble" style="--size:4.046763632588885rem; --distance:8.968936186399489rem; --position:35.30164501348484%; --time:3.897256628671357s; --delay:-3.9120279212318376s;"></div>
+
+    <div class="bubble" style="--size:5.078669435205998rem; --distance:9.39160533369909rem; --position:39.79814052499972%; --time:3.9656766157530554s; --delay:-3.9276691427483765s;"></div>
+
+    <div class="bubble" style="--size:4.8072255822991545rem; --distance:9.248011847572513rem; --position:33.94368370644455%; --time:2.52102347445251s; --delay:-3.533775296308338s;"></div>
+
+    <div class="bubble" style="--size:2.890094634300742rem; --distance:7.898281346722785rem; --position:23.507408099393047%; --time:2.043461858023746s; --delay:-3.6650086816779424s;"></div>
+
+    <div class="bubble" style="--size:2.860497906084813rem; --distance:7.419524537082241rem; --position:2.2004060422539995%; --time:3.1129233282290873s; --delay:-2.83457731120407s;"></div>
+
+    <div class="bubble" style="--size:3.9254472844612867rem; --distance:8.991232243553764rem; --position:29.333530666656472%; --time:2.0306715848651313s; --delay:-2.509427559789556s;"></div>
+
+    <div class="bubble" style="--size:2.4124251041325584rem; --distance:7.087964466918981rem; --position:102.78704177717302%; --time:2.396633518612452s; --delay:-2.3316116057657092s;"></div>
+
+    <div class="bubble" style="--size:4.250291125281978rem; --distance:7.36388775193541rem; --position:27.87690997990797%; --time:3.4517063220085684s; --delay:-2.377483789823335s;"></div>
+
+    <div class="bubble" style="--size:3.72649855910526rem; --distance:8.889315081332555rem; --position:59.09346450655538%; --time:2.165692859293983s; --delay:-3.036495689970038s;"></div>
+
+    <div class="bubble" style="--size:5.1080252369220664rem; --distance:6.757134650301035rem; --position:55.78275719182327%; --time:3.2477646197338705s; --delay:-3.9636127739945852s;"></div>
+
+    <div class="bubble" style="--size:3.9285131088516287rem; --distance:7.4306611338750015rem; --position:85.98112160859134%; --time:2.6465546739677817s; --delay:-3.6650777648889674s;"></div>
+
+    <div class="bubble" style="--size:3.4229678454770855rem; --distance:8.499000105770229rem; --position:20.844716659960202%; --time:2.5582077249177066s; --delay:-3.1118905442009237s;"></div>
+
+    <div class="bubble" style="--size:4.4338471049374615rem; --distance:9.038138791734013rem; --position:43.600204882926235%; --time:2.5069038751885797s; --delay:-2.7446828919091146s;"></div>
+
+    <div class="bubble" style="--size:4.976466957113123rem; --distance:7.147825554669067rem; --position:84.43970165657814%; --time:2.352494646146438s; --delay:-2.4113873928442633s;"></div>
+
+    <div class="bubble" style="--size:4.716922142229045rem; --distance:7.899626197012813rem; --position:53.870339411567734%; --time:3.4988871359143094s; --delay:-2.04744105114149s;"></div>
+    
+    <div class="bubble" style="--size:3.802465816164884rem; --distance:8.263164947963517rem; --position:11.082856113512495%; --time:2.0692505216248933s; --delay:-2.56681332480248s;"></div>
+
+    <div class="bubble" style="--size:2.884027229182819rem; --distance:8.497083156942548rem; --position:93.17175613508708%; --time:2.978279835139755s; --delay:-2.288404879780661s;"></div>
+
+    <div class="bubble" style="--size:4.348496823803431rem; --distance:9.011193487913586rem; --position:44.37291568744678%; --time:2.3661638764250004s; --delay:-2.1500685951189946s;"></div>
+
+    <div class="bubble" style="--size:5.426560354709028rem; --distance:9.066578887832328rem; --position:94.13110104863514%; --time:2.376339691566081s; --delay:-2.937940055008413s;"></div>
+
+    <div class="bubble" style="--size:2.4163641780140885rem; --distance:8.801083002116638rem; --position:98.45445612727029%; --time:2.287015534225988s; --delay:-2.1542260123147194s;"></div>
+
+    <div class="bubble" style="--size:5.149767396189964rem; --distance:6.139180575965751rem; --position:50.11036253342525%; --time:2.0207172725897102s; --delay:-3.2316606335819364s;"></div>
+
+    <div class="bubble" style="--size:5.299652241491346rem; --distance:6.54775306120277rem; --position:18.968660343072653%; --time:3.7476641642462405s; --delay:-2.8699716395937727s;"></div>
+
+    <div class="bubble" style="--size:3.2144422481177637rem; --distance:8.187475519471967rem; --position:25.340680523820197%; --time:2.3636331296587114s; --delay:-2.969763536205973s;"></div>
+
+    <div class="bubble" style="--size:2.763117496829704rem; --distance:8.01639452200746rem; --position:20.199747078514854%; --time:3.7805989610638147s; --delay:-2.966349276707184s;"></div>
+
+    <div class="bubble" style="--size:2.676198816140772rem; --distance:6.905250268233104rem; --position:23.58696871443123%; --time:3.304712500804874s; --delay:-2.6021021982545083s;"></div>
+
+    <div class="bubble" style="--size:5.11419590818672rem; --distance:7.9043388138505275rem; --position:50.115673188554965%; --time:2.5245324918354313s; --delay:-3.4960788452041287s;"></div>
+
+    <div class="bubble" style="--size:4.740188276418029rem; --distance:9.053650295941843rem; --position:63.03154994871623%; --time:3.1040062461280704s; --delay:-3.5478403168828874s;"></div>
+
+    <div class="bubble" style="--size:4.029374023308834rem; --distance:8.556490846700687rem; --position:26.693471228684697%; --time:2.3480503026638027s; --delay:-3.5921117500581468s;"></div>
+    
+    <div class="bubble" style="--size:5.860140830818846rem; --distance:9.713711651825648rem; --position:63.103062760079254%; --time:3.519043372608735s; --delay:-2.13152511125163s;"></div>
+
+    <div class="bubble" style="--size:3.7414473254931924rem; --distance:7.237398238093882rem; --position:98.89899373595482%; --time:3.0285316084995624s; --delay:-2.970921291201461s;"></div>
+
+    <div class="bubble" style="--size:3.6769092468589015rem; --distance:7.614115924290509rem; --position:64.8362261083565%; --time:2.75806776132487s; --delay:-3.5020179783941185s;"></div>
+
+    <div class="bubble" style="--size:5.3286630888687rem; --distance:8.999815305156606rem; --position:51.853498523413116%; --time:2.8808624244768666s; --delay:-3.6141256216475655s;"></div>
+
+    <div class="bubble" style="--size:2.590287975244184rem; --distance:7.7608993573670295rem; --position:104.47110817120485%; --time:2.606434527703028s; --delay:-2.234717530489891s;"></div>
+
+  </div>
+  <div class="content">
+    <div><P style="text-align: center;">
+      "©2023 [ FILMDECK ]. All rights reserved."<br>
+      "Thank you for using our movie rating website. We hope you found it helpful in deciding what to watch next."<br>
+      "Disclaimer: The opinions expressed on this website are solely those of our users and do not necessarily reflect the views of FILMDECK."<br>
+      "Stay up to date with the latest movie ratings and reviews by following us on social media platforms provided in the contact page."
+      "For any inquiries or feedback, please contact us at [your website's email address]."
+    </P></div>
+    <div><a class="image" href="http://127.0.0.1:5501/index.html"  style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg&quot;)"></a>
+      <p>FILMDECK - 2023</p>
+    </div>
+  </div>
+</div>
+<svg style="position: fixed; top: 100vh">
+  <defs>
+    <filter id="blob">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
+    </filter>
+  </defs>
+</svg>
+</footer>
+
+      <!-- <footer class="text-gray-600 body-font" style="background: #00000087;">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Tailblocks</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Tailblocks —
+            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@knyttneve</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer> -->
+
+      
+      
+  </body>
+</html>
